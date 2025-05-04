@@ -8,6 +8,7 @@ defmodule TungSahurBot do
   alias TungSahurBot.Command.Fruit
   alias TungSahurBot.Command.Name
   alias TungSahurBot.Command.Number
+  alias TungSahurBot.Command.Newton
   alias Nostrum.Api.Message
 
   def handle_event({:MESSAGE_CREATE, msg, _ws_state}) do
@@ -32,6 +33,9 @@ defmodule TungSahurBot do
 
       String.starts_with?(msg.content, "!number") ->
         Message.create(msg.channel_id, Number.handle_number(msg.content))
+
+      String.starts_with?(msg.content, "!calc") ->
+        Message.create(msg.channel_id, Newton.handle_newton(msg.content))
 
       true ->
         :ignore
