@@ -24,6 +24,7 @@ docker-compose up --build (Running with docker)
 | `!fruit <fruit>` | Data about all kinds of fruit | `!fruit orange` | [Fruityvice](https://www.fruityvice.com/#1) |
 | `!name <name>` | Estimates the age from a first name | `!name João` | [Agify.io]{https://agify.io/} |
 | `!number <number>` | Facts about numbers | `!number 2` | [Numbers]{http://numbersapi.com/#42} |
+| `!calc <expression>` | Symbolic and Arithmetic Math Calculator | `!calc 2^2+2(2)` | [Newton]{https://newton.vercel.app/} |
 
 ## Dependences
 
